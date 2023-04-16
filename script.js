@@ -22,5 +22,22 @@ function toggleMenu() {
   }
 }
 
-/* Event Listeners */
+
+ /* Event Listeners FOOTER JS > CSS DISPLAY NONE ET POSITION FIXED*/
+ /* 
 toggle.addEventListener("click", toggleMenu, false);
+
+var footer = document.querySelector("footer");
+
+window.addEventListener("scroll", function() {
+  var scrollHeight = document.documentElement.scrollHeight;
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var clientHeight = document.documentElement.clientHeight;
+
+  if (scrollTop + clientHeight >= scrollHeight) {
+    footer.style.display = "block";
+  } else {
+    footer.style.display = "none";
+  }
+});
+*/
