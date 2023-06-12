@@ -1,0 +1,11 @@
+.wrapper {
+    text-align: center; /* pour centrer les blocs horizontalement */
+  }
+  
+  .block {
+    display: inline-flex; /* pour placer les blocs côte à côte */
+    flex-direction: column;
+    width: 40%; /* pour définir la largeur de chaque bloc */
+    margin: 30px; /* pour ajouter une marge autour de chaque bloc */
+  }
+  
