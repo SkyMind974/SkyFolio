@@ -84,7 +84,7 @@ header {
     position: sticky;
     z-index: 10;
     top: 0;
-    background-color: #131c85;
+    background-color: #484b6a;
     border-bottom: #9394a5 1px solid;
 }
 
@@ -111,6 +111,9 @@ nav {
     position: sticky;
     z-index: 2;
     padding: 0 1.5rem;
+
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 nav a {
@@ -184,15 +187,20 @@ nav a:hover,a:focus {
 @media screen and (min-width: 1024px) {
     nav {
         display: flex;
-        justify-content: flex-end;
-        padding: 0 0;
+        justify-content: center;
+        padding: 0;
     }
-    
+
     .menu {
         align-items: center;
         flex-wrap: nowrap;
         height: 80px;
+
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
     }
+
     .logo {
         order: 0;
         position: absolute;
@@ -393,18 +401,20 @@ nav a:hover,a:focus {
 }
 
 
-/* Career */
-
 .career {
     display: flex;
     align-content: center;
-    width: 1200px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     font-size: 0.875rem;
     padding: 2rem 0;
 }
+
 
 .dark .career {
     color: #eeeeee;
@@ -668,4 +678,134 @@ footer p {
         text-align: right;
         border-top: white 1px solid;
     }
+}
+
+/* Skill tags */
+.skills-tags{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:0.6rem;
+    padding: 0.5rem 1rem 0;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.skill-tag{
+    display:inline-block;
+    padding: 0.35rem 0.75rem;
+    border-radius: 999px;
+    background-color: #d2d3db;
+    color: #484b6a;
+    border: 1px solid #9394a5;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+.dark .skill-tag{
+    background-color: #313131;
+    color: #eeeeee;
+    border: 1px solid #5b5b85;
+}
+
+
+/* --- Added: unified skill tiles (text icons) --- */
+.skills-text-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    font-size: 22px;
+    background: var(--cardColor);
+    color: var(--textColor);
+    border: 2px solid rgba(147,148,165,0.35);
+    margin: 0 auto 8px auto;
+}
+
+/* --- Added: project buttons --- */
+.project-links{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.project-btn{
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 2px solid rgba(147,148,165,0.45);
+    text-decoration: none;
+    color: var(--textColor);
+    background: transparent;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+.project-btn:hover{
+    transform: translateY(-1px);
+    background: rgba(170,170,255,0.12);
+}
+
+.projects h1 {
+    text-align: center;
+}
+
+.projects > div { text-align: center; }
+/* ===== Recommendation PDF Button ===== */
+
+.recommendation-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0 3rem;
+}
+
+.recommendation-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    padding: 0.9rem 1.6rem;
+    border-radius: 999px;
+
+    font-size: 1.05rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    color: #484b6a;
+    background-color: #fafafa;
+    border: 2px solid #9394a5;
+
+    transition: transform 0.2s ease, box-shadow 0.2s ease,
+                background-color 0.2s ease, color 0.2s ease;
+}
+
+.recommendation-btn i {
+    font-size: 1.2rem;
+    color: #d32f2f;
+}
+
+.recommendation-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    background-color: #484b6a;
+    color: #ffffff;
+}
+
+.recommendation-btn:hover i {
+    color: #ffffff;
+}
+
+.dark .recommendation-btn {
+    background-color: #313131;
+    color: #eeeeee;
+    border-color: #aaaaff;
+}
+
+.dark .recommendation-btn:hover {
+    background-color: #aaaaff;
+    color: #272727;
+}
+
+.dark .recommendation-btn:hover i {
+    color: #272727;
 }
