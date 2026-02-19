@@ -1,4 +1,4 @@
-    /* General */
+
 * {
 	box-sizing: border-box;
 }
@@ -79,7 +79,6 @@ h1, h2, h3 {
     }
 }
 
-/* Header */
 header {
     position: sticky;
     z-index: 10;
@@ -773,7 +772,6 @@ footer p {
 }
 
 .projects > div { text-align: center; }
-/* ===== Recommendation PDF Button ===== */
 
 .recommendation-btn-wrapper {
     display: flex;
