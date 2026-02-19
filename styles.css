@@ -183,6 +183,28 @@ nav a:hover,a:focus {
   display: block;
 }
 
+.skills-images {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-images img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    display: block;
+}
+
+.skills-images figcaption {
+    margin-top: 0.6rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1rem;
+}
 
 @media screen and (min-width: 1024px) {
     nav {
