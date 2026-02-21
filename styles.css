@@ -79,6 +79,16 @@ h1, h2, h3 {
     }
 }
 
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.education-list .school {
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+}
+
 header {
     position: sticky;
     z-index: 10;
